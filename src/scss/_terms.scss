@@ -1,0 +1,361 @@
+.terms__heading {
+  background-color: $primary;
+  &-wrapper {
+    padding: 10rem 0rem;
+    text-align: center;
+  }
+  &-header {
+    font-size: 4.5rem;
+    color: $white;
+    font-family: "Inter";
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    @include breakpoint-down(medium) {
+      font-size: 4rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 3rem;
+      padding: 2rem;
+    }
+  }
+  &-button {
+    font-size: 2.5rem;
+    padding: 1.5rem 5rem;
+    border-radius: 28px;
+    border: none;
+    font-weight: 300;
+    background: $linear;
+    color: $white;
+    margin-bottom: 25rem;
+    @include breakpoint-down(medium) {
+      font-size: 2.2rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 1.8rem;
+      padding: 1rem 3rem;
+    }
+  }
+}
+.terms__content {
+  background-color: #f2f2f2;
+  &__wrapper {
+    background-color: $white;
+    position: relative;
+    top: -25rem;
+    border-radius: 2rem;
+    padding: 8rem;
+    @include breakpoint-down(medium) {
+      padding: 8rem 4rem;
+      margin: 0 5rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 6rem 2rem;
+      margin: 0 2rem;
+    }
+  }
+  &-scrollbar {
+    height: 76.2375rem;
+    width: 75rem;
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+    &-wrapper {
+      padding-right: 2rem;
+    }
+    h4 {
+      font-size: 3rem;
+      font-weight: 500;
+      font-family: "Inter";
+      @include breakpoint-down(small) {
+        font-size: 2rem;
+      }
+    }
+    P {
+      font-size: 1.6rem;
+      font-weight: 300;
+      @include breakpoint-down(small) {
+        font-size: 1.4rem;
+      }
+    }
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 500;
+      font-family: "Inter";
+      @include breakpoint-down(small) {
+        font-size: 2.5rem;
+      }
+    }
+    table {
+      border: 2px solid $secondary;
+      text-align: center;
+      th {
+        border-bottom: 2px solid $secondary;
+        font-size: 2rem;
+        color: $white;
+        background-color: $secondary;
+        padding: 3rem 4rem;
+        @include breakpoint-down(small) {
+          font-size: 1.6rem;
+        }
+      }
+      td {
+        border: 2px solid $secondary;
+        @include breakpoint-down(small) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #e3e3e3;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $secondary;
+  }
+  &-btn {
+    text-align: center;
+    margin-top: 7rem;
+    .tc__decline {
+      font-size: 2.5rem;
+      font-weight: 500;
+      padding: 1rem 6rem;
+      color: $secondary;
+      border: 2px solid $secondary;
+      border-radius: 10px;
+      background: transparent;
+      margin-inline: 3rem;
+      @include breakpoint-down(medium) {
+        margin-inline: 0rem;
+        margin-right: 7rem;
+        padding: 1rem 5rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 2rem;
+        margin-right: 3rem;
+        padding: 1rem 3rem;
+      }
+      &:hover {
+        color: $white;
+        background: $secondary;
+      }
+    }
+    .tc__agree {
+      font-size: 2.5rem;
+      font-weight: 500;
+      padding: 1rem 6rem;
+      color: $white;
+      border: 2px solid #3ea896;
+      border-radius: 10px;
+      background: #3ea896;
+      margin-inline: 3rem;
+      @include breakpoint-down(medium) {
+        margin-inline: 0rem;
+        padding: 1rem 5rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 2rem;
+        padding: 1rem 3rem;
+      }
+      &:hover {
+        background: transparent;
+        color: #3ea896;
+      }
+    }
+  }
+}
+.privacy {
+  padding: 5rem 0rem;
+  position: relative;
+  &__content {
+    display: flex;
+    align-items: center;
+    margin: 5rem auto;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      justify-content: center;
+      margin: 5rem;
+      text-align: center;
+    }
+    @include breakpoint-down(small) {
+      margin: 5rem 2rem;
+    }
+  }
+  &__info {
+    flex-basis: 56%;
+    h2 {
+      font-size: 5rem;
+      font-family: "Inter";
+      font-weight: 600;
+      text-transform: uppercase;
+      @include breakpoint-down(small) {
+        font-size: 3rem;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 500;
+      @include breakpoint-down(small) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  &-img {
+    flex-basis: 44%;
+    img {
+      width: 100%;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint-down(medium) {
+      margin: 0rem 2rem;
+    }
+    @include breakpoint-down(small) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    &-learn {
+      border-bottom: 2px solid $black;
+      background: transparent;
+      padding-bottom: 0;
+      font-size: 2rem;
+      font-weight: 600;
+      color: $black;
+      cursor: pointer;
+      &:hover {
+        color: $secondary;
+        border-bottom: 2px solid $secondary;
+      }
+    }
+    &-btns {
+      @include breakpoint-down(small) {
+        margin-block: 3rem;
+      }
+    }
+    .cancel-btn {
+      border: 2px solid $secondary;
+      padding: 1rem 3rem;
+      font-size: 2rem;
+      font-weight: 600;
+      border-radius: 10px;
+      color: $secondary;
+      background: transparent;
+      margin-right: 2rem;
+      &:hover {
+        background: $secondary;
+        color: $white;
+      }
+    }
+    .agree-btn {
+      border: 2px solid #3ea896;
+      padding: 1rem 3rem;
+      font-size: 2rem;
+      font-weight: 600;
+      border-radius: 10px;
+      color: $white;
+      background: #3ea896;
+      margin-right: 2rem;
+      &:hover {
+        background: transparent;
+        color: #3ea896;
+      }
+    }
+  }
+  &__scrollbar {
+    position: absolute;
+    z-index: 10;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5rem;
+    background: $primary;
+    border-radius: 11px;
+    @include breakpoint-down(small) {
+      padding: 5rem 2rem;
+      top: 20rem;
+    }
+    .closeBtn {
+      float: right;
+      padding-bottom: 4rem;
+      @include breakpoint-down(small) {
+        padding-top: 0rem;
+      }
+      > span {
+        display: block;
+        height: 4px;
+        width: 38px;
+        border-radius: 60px;
+        background-color: $secondary;
+        transform-origin: 16px 3px;
+        cursor: pointer;
+      }
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+    &-info {
+      height: 70rem;
+      width: 70rem;
+      overflow-y: scroll;
+      padding-right: 5rem;
+      color: $white;
+      @include breakpoint-down(medium) {
+        height: 80rem;
+        width: 50rem;
+      }
+      @include breakpoint-down(small) {
+        height: 60rem;
+        width: 50rem;
+      }
+      @media screen and (max-width: 500px) {
+        width: 30rem;
+        height: 60rem;
+      }
+      h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: "Inter";
+        color: $secondary;
+        @include breakpoint-down(small) {
+          font-size: 2rem;
+        }
+      }
+      P {
+        font-size: 1.6rem;
+        font-weight: 300;
+        @include breakpoint-down(small) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+      background-color: #eaeaea;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #e3e3e3;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: $secondary;
+    }
+  }
+}

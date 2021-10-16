@@ -1,0 +1,188 @@
+.hero {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primary;
+    opacity: 0.7;
+  }
+  &__wrapper {
+    position: relative;
+    text-align: center;
+    padding: 17rem 7rem;
+    z-index: 2;
+    @include breakpoint-down(small) {
+      padding: 10rem 2rem;
+    }
+    @media screen and (max-width: 300px) {
+      padding: 8rem 2rem;
+    }
+  }
+  &__heading {
+    h2 {
+      font-size: 4.2rem;
+      font-family: "Inter";
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $white;
+      @include breakpoint-down(medium) {
+        font-size: 3.5rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+  hr {
+    width: 20rem;
+    border: 3px solid $secondary;
+    border-radius: 60px;
+    background: $secondary;
+    @include breakpoint-down(medium) {
+      width: 15rem;
+    }
+    @include breakpoint-down(small) {
+      width: 10rem;
+      border: 2px solid $secondary;
+    }
+  }
+  &__text {
+    font-family: "Inter";
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.06em;
+    @include breakpoint-down(medium) {
+      font-size: 1.8rem;
+      line-height: 4.4rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 1.6rem;
+      line-height: 4.4rem;
+    }
+  }
+  &__btn {
+    background: $linear;
+    border: 2px solid $primary;
+    position: relative;
+    border-radius: 7px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: "Inter";
+    padding: 2rem 7rem;
+    color: $white;
+    margin-block: 4rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    @include breakpoint-down(medium) {
+      font-size: 2rem;
+      padding: 2rem 5rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 1.6rem;
+    }
+    &:hover {
+      background: transparent;
+      border: 2px solid $secondary;
+      transition: 0.3s;
+    }
+    &:active {
+      background-color: $secondary;
+      transform: translateY(4px);
+    }
+  }
+  &__info {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color: #121323;
+    .hinfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include breakpoint-down(medium) {
+        justify-content: space-around;
+      }
+      @include breakpoint-down(small) {
+        flex-direction: column;
+      }
+      h4 {
+        color: $secondary;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-block: 2rem;
+        @include breakpoint-down(small) {
+          padding-bottom: 2rem;
+          font-size: 2rem;
+          border-bottom: 2px solid $secondary;
+          padding: 0rem 8rem;
+        }
+      }
+    }
+  }
+}
+.trade__info {
+  &-wrapper {
+    margin: 10rem 0rem;
+    @include breakpoint-down(medium) {
+      margin: 8rem 4rem;
+    }
+    @include breakpoint-down(small) {
+      margin: 8rem 2rem;
+    }
+  }
+  .ti__heading {
+    font-size: 4.4rem;
+    font-family: "Inter";
+    font-weight: 500;
+    text-align: center;
+    color: $primary;
+    padding: 2rem 14rem;
+    @include breakpoint-down(medium) {
+      font-size: 3.4rem;
+      padding: 2rem 17rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 2.6rem;
+      padding: 2rem 5rem;
+    }
+  }
+  .ti__text {
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+  .ti__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    @include breakpoint-down(medium) {
+      flex-direction: column-reverse;
+    }
+    &-text {
+      flex-basis: 50%;
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    &-img {
+      flex-basis: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

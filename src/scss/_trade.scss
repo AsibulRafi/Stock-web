@@ -1,0 +1,492 @@
+.trade {
+  position: relative;
+  background-image: url("../images/stockmarket.png");
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media (max-width: 1464px) {
+    background-size: cover;
+  }
+  @include breakpoint-down(medium) {
+    background-position: center;
+    background-size: cover;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        60.1deg,
+        #02134f 40.14%,
+        rgba(2, 19, 79, 0) 73.74%
+      ),
+      linear-gradient(356.39deg, #02134f 46.49%, rgba(2, 19, 79, 0) 55.52%);
+  }
+  &__wrapper {
+    padding: 4rem 0rem 3rem 0rem;
+  }
+  &__heading {
+    position: relative;
+    @include breakpoint-down(medium) {
+      padding: 2rem 0rem 2rem 6rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 2rem;
+      padding-top: 0rem;
+    }
+    h2 {
+      font-family: "Inter";
+      font-size: 4.4rem;
+      font-weight: 600;
+      color: $white;
+      z-index: 1;
+      letter-spacing: 0.05em;
+      @include breakpoint-down(small) {
+        font-size: 3.5rem;
+        text-align: center;
+      }
+    }
+    p {
+      color: $white;
+      z-index: 1;
+      line-height: 30px;
+      padding-right: 50rem;
+      @include breakpoint-down(medium) {
+        padding-right: 20rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 16px;
+        padding-right: 0rem;
+        text-align: center;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    @include breakpoint-down(medium) {
+      padding: 4rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 2rem;
+    }
+    h2 {
+      font-size: 3.2rem;
+      font-family: "Inter";
+      font-weight: 600;
+      z-index: 1;
+      color: #fff;
+      margin-block: 1rem;
+      @include breakpoint-down(medium) {
+        text-align: center;
+      }
+      @include breakpoint-down(small) {
+        font-size: 2.5rem;
+      }
+    }
+    .trade__content-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      z-index: 1;
+      .trade___single-card {
+        background: #fff;
+        border-radius: 10px;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 1rem 0rem;
+        height: 240px;
+        width: 253px;
+        text-align: center;
+        flex-basis: 22%;
+        @include breakpoint-down(medium) {
+          flex-basis: 40%;
+          margin: 1rem auto;
+        }
+        @include breakpoint-down(small) {
+          flex-basis: 60%;
+        }
+        h4 {
+          font-size: 1.8rem;
+          font-family: "Inter";
+          padding: 0rem 1rem;
+          @include breakpoint-down(small) {
+            font-size: 1.5rem;
+          }
+        }
+        p {
+          margin: 0;
+          font-size: 1.4rem;
+          padding: 0rem 1rem;
+          @media screen and(max-width:350px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+// Steps
+.steps {
+  &__wrapper {
+    margin: 8rem 0rem;
+  }
+  &__heading {
+    font-size: 4.2rem;
+    text-align: center;
+    font-family: "Inter";
+    @include breakpoint-down(medium) {
+      font-size: 3.8rem;
+      padding: 0rem 3rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 3rem;
+    }
+  }
+  hr {
+    position: relative;
+    top: 21.5rem;
+    border: 1px dotted $secondary;
+    width: 100%;
+    background: none;
+    @include breakpoint-down(small) {
+      display: none;
+    }
+  }
+  &__contents {
+    display: flex;
+    align-items: flex-start;
+    @include breakpoint-down(medium) {
+      padding: 0rem 4rem;
+    }
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__item1 {
+    flex-basis: 34%;
+    margin-right: 3rem;
+    &-number {
+      font-size: 10rem;
+      font-weight: 700;
+      color: $secondary;
+    }
+    img {
+      z-index: 5;
+      @include breakpoint-down(small) {
+        display: none;
+      }
+    }
+    &-heading {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 3rem;
+      @include breakpoint-down(small) {
+        margin-bottom: 1rem;
+      }
+    }
+    &-text {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #3c3939;
+    }
+  }
+
+  &__item2 {
+    flex-basis: 34%;
+    margin-right: 3rem;
+    &-number {
+      font-size: 10rem;
+      font-weight: 700;
+      color: $secondary;
+    }
+    img {
+      z-index: 5;
+      @include breakpoint-down(small) {
+        display: none;
+      }
+    }
+    &-heading {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 3rem;
+      @include breakpoint-down(small) {
+        margin-bottom: 1rem;
+      }
+    }
+    &-text {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #3c3939;
+    }
+  }
+
+  &__item3 {
+    flex-basis: 26%;
+
+    &-number {
+      z-index: 5;
+      font-size: 10rem;
+      font-weight: 700;
+      color: $secondary;
+    }
+    img {
+      @include breakpoint-down(small) {
+        display: none;
+      }
+    }
+    &-heading {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 7rem;
+      &-acc {
+        color: $black;
+        border-bottom: 2px solid $black;
+        cursor: pointer;
+        &:hover {
+          color: $secondary;
+          border-bottom: 2px solid $secondary;
+        }
+      }
+      @include breakpoint-down(small) {
+        margin-bottom: 1rem;
+      }
+    }
+    &-text {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #3c3939;
+    }
+  }
+}
+// slider
+.activeSlide {
+  transform: translateX(0);
+  opacity: 1;
+}
+.lastSlide {
+  transform: translateX(-100%);
+  opacity: 0;
+  display: none;
+}
+.nextSlide {
+  transform: translateX(100%);
+  opacity: 0;
+  display: none;
+}
+.slider__section {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-out;
+  }
+  .slider {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__wrapper {
+      padding: 5rem 0rem;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      @include breakpoint-down(medium) {
+        padding: 5rem;
+      }
+      @include breakpoint-down(small) {
+        padding: 2rem;
+      }
+    }
+    &__card {
+      position: relative;
+      background: $primary;
+      border-radius: 10px;
+      padding: 2rem 10rem;
+      text-align: center;
+      color: $white;
+      @include breakpoint-down(medium) {
+        padding: 2rem 5rem;
+      }
+      &-heading {
+        font-family: "Inter";
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 3rem 0rem;
+        @include breakpoint-down(medium) {
+          padding: 3rem 2rem;
+        }
+        @include breakpoint-down(small) {
+          font-size: 2rem;
+        }
+      }
+      &-btn {
+        padding: 2rem 4rem;
+        border-radius: 10px;
+        background: $secondary;
+        border: 2px solid $secondary;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $white;
+        @include breakpoint-down(medium) {
+          font-size: 1.8rem;
+          padding: 2rem 3rem;
+        }
+        @include breakpoint-down(small) {
+          font-size: 1.6rem;
+          padding: 1rem 2.5rem;
+        }
+        &:hover {
+          background: transparent;
+        }
+      }
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        background: none;
+        border: none;
+        font-size: 4rem;
+        cursor: pointer;
+        place-items: center;
+        &:hover {
+          color: $secondary;
+        }
+      }
+      .prev {
+        left: 0;
+      }
+      .next {
+        right: 0;
+      }
+    }
+  }
+}
+// about
+.about {
+  position: relative;
+  background-image: url("../images/aboutImg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0rem;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      85.67deg,
+      #02134f 100%,
+      rgba(2, 19, 79, 0.34375) 61.2%,
+      rgba(2, 19, 79, 0) 187.6%
+    );
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    opacity: 0.8;
+  }
+  &__heading {
+    position: relative;
+    text-align: center;
+    @include breakpoint-down(medium) {
+      padding: 0rem 4rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 0rem 2rem;
+    }
+
+    h2 {
+      font-family: "Inter";
+      font-weight: 600;
+      font-size: 4.4rem;
+      letter-spacing: 0.05em;
+      color: $white;
+      z-index: 1;
+      text-transform: uppercase;
+      @include breakpoint-down(medium) {
+        font-size: 3.5rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 2.5rem;
+      }
+    }
+    p {
+      line-height: 3rem;
+      color: #b5b5b5;
+      z-index: 1;
+      @include breakpoint-down(small) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    @include breakpoint-down(medium) {
+      text-align: center;
+      flex-direction: column;
+      padding: 1rem 12rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 1rem 5rem;
+    }
+    .about__card {
+      flex-basis: 44%;
+      &:not(:nth-child(2)) {
+        margin-right: 5rem;
+      }
+      &:not(:nth-child(4)) {
+        margin-right: 5rem;
+      }
+      @include breakpoint-down(medium) {
+        &:not(:nth-child(2)) {
+          margin-right: 0rem;
+        }
+        &:not(:nth-child(4)) {
+          margin-right: 0rem;
+        }
+      }
+      h2 {
+        font-size: 2.4rem;
+        color: $white;
+        z-index: 1;
+        padding-right: 2rem;
+        @include breakpoint-down(small) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        color: $white;
+        font-size: 1.6rem;
+        z-index: 1;
+        @include breakpoint-down(small) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

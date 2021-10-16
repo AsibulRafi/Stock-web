@@ -1,0 +1,212 @@
+.trading__hero {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/tradingimg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primary;
+    opacity: 0.7;
+  }
+  &-wrapper {
+    position: relative;
+    text-align: center;
+    padding: 10rem 0rem;
+    z-index: 5;
+    @include breakpoint-down(medium) {
+      padding: 8rem 5rem;
+    }
+  }
+
+  &-heading {
+    font-family: "Inter";
+    font-size: 5.2rem;
+    font-weight: 600;
+    color: $white;
+    margin-bottom: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    @include breakpoint-down(small) {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+    }
+  }
+  &-btn {
+    background: $linear;
+    border: 2px solid $primary;
+    position: relative;
+    border-radius: 7px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: "Inter";
+    padding: 2rem 7rem;
+    color: $white;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    @include breakpoint-down(medium) {
+      font-size: 2rem;
+      padding: 2rem 5rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 1.6rem;
+      padding: 2rem 3rem;
+    }
+    &:hover {
+      background: transparent;
+      border: 2px solid $secondary;
+      transition: 0.3s;
+    }
+    &:active {
+      background-color: $secondary;
+      transform: translateY(4px);
+    }
+  }
+  &-image {
+    img {
+      width: 70%;
+      height: 100%;
+    }
+  }
+}
+.trading__info {
+  padding: 3rem 0rem;
+  &-heading {
+    font-size: 4.4rem;
+    font-family: "Inter";
+    font-weight: 500;
+    text-align: center;
+    color: $primary;
+    padding: 1rem 14rem;
+    letter-spacing: 0.1em;
+    @include breakpoint-down(medium) {
+      font-size: 3.4rem;
+      padding: 1rem 17rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 2.6rem;
+      padding: 1rem 5rem;
+    }
+  }
+  hr {
+    width: 20rem;
+    border-radius: 30px;
+    border: 3px solid $secondary;
+    margin-bottom: 3rem;
+    @include breakpoint-down(medium) {
+      width: 15rem;
+    }
+  }
+  &-text {
+    font-size: 1.4rem;
+    line-height: 30px;
+    @include breakpoint-down(medium) {
+      padding: 0rem 4rem;
+    }
+    @include breakpoint-down(small) {
+      text-align: center;
+    }
+  }
+  &-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+    &-img {
+      flex-basis: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    &-text {
+      flex-basis: 50%;
+      p {
+        font-size: 1.4rem;
+        line-height: 30px;
+        @include breakpoint-down(medium) {
+          padding: 0rem 4rem;
+        }
+        @include breakpoint-down(small) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.trading__services {
+  &-heading {
+    font-size: 4.4rem;
+    font-family: "Inter";
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary;
+    padding: 1rem 14rem;
+    letter-spacing: 0.1em;
+    @include breakpoint-down(medium) {
+      font-size: 3.4rem;
+      padding: 1rem 17rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 2.6rem;
+      padding: 1rem 5rem;
+    }
+  }
+  hr {
+    width: 20rem;
+    border-radius: 30px;
+    border: 3px solid $secondary;
+    margin-bottom: 3rem;
+    @include breakpoint-down(medium) {
+      width: 15rem;
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 8rem auto;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-section1 {
+      flex-basis: 52%;
+      @include breakpoint-down(medium) {
+        flex-basis: 35%;
+      }
+    }
+    &-section2 {
+      flex-basis: 48%;
+      @include breakpoint-down(medium) {
+        flex-basis: 35%;
+      }
+    }
+    .ts__services {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4rem;
+      img {
+        width: 40px;
+        height: 40px;
+        margin-inline: 1rem;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

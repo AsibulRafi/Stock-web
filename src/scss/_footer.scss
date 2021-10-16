@@ -1,0 +1,150 @@
+.footer {
+  background-color: $primary;
+  color: $white;
+  .wrapper {
+    padding: 5rem 0rem;
+    @include breakpoint-down(medium) {
+      padding: 5rem 2rem;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__nav {
+    .nav__heading {
+      font-size: 2.5rem;
+      font-family: "Inter";
+      font-weight: 600;
+      color: $secondary;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .nav__links {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      @include breakpoint-down(small) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-block: 2rem;
+      }
+      .link1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        @include breakpoint-down(small) {
+          margin-right: 0;
+        }
+        a {
+          color: $white;
+          font-weight: 600;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          line-height: 4rem;
+        }
+      }
+      .link2 {
+        display: flex;
+        flex-direction: column;
+        a {
+          color: $white;
+          font-weight: 600;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          line-height: 4rem;
+        }
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .footer__lg-btn {
+      background: transparent;
+      border: 2px solid $secondary;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $white;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      @include breakpoint-down(small) {
+        padding: 1rem 7rem;
+      }
+      &:hover {
+        background: $secondary;
+      }
+    }
+    .footer__oa-btn {
+      background: transparent;
+      border: 2px solid $secondary;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $white;
+      cursor: pointer;
+      @include breakpoint-down(small) {
+        padding: 1rem 7rem;
+      }
+      &:hover {
+        background: $secondary;
+      }
+    }
+  }
+  &__content {
+    text-align: center;
+
+    .fc__heading {
+      font-size: 26px;
+      font-weight: 600;
+      margin-block: 2rem;
+    }
+
+    hr {
+      width: 9rem;
+      border: 1px solid #ff6e52;
+    }
+
+    .fc1 {
+      font-size: 14px;
+      font-weight: 300;
+      @include breakpoint-down(small) {
+        font-size: 12px;
+      }
+    }
+
+    .fc2 {
+      font-size: 14px;
+      font-weight: 300;
+      @include breakpoint-down(small) {
+        font-size: 12px;
+      }
+    }
+  }
+  .copyright {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    @include breakpoint-down(small) {
+      font-size: 12px;
+    }
+  }
+}
