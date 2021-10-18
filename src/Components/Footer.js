@@ -7,16 +7,16 @@ const Footer = () => {
       <div className="container wrapper">
         {/* Footer Heading */}
         <div className="footer__header">
-          <div className="footer__logo">
+          <Link to="/" className="footer__logo">
             <img src={logo} alt="footer logo" />
-          </div>
+          </Link>
           <div className="footer__nav">
             <h4 className="nav__heading">Fast Links</h4>
             <div className="nav__links">
               <div className="link1">
                 <Link to="/about">About US</Link>
                 <Link to="/about">Contact US</Link>
-                <Link to="/account">Account Types</Link>
+                <Link to="/accounts">Account Types</Link>
               </div>
               <div className="link2">
                 <Link to="/trading">Platform</Link>

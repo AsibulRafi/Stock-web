@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
+import React from "react"
+import { Link } from "react-router-dom"
+import logo from "../images/logo.png"
 
 const Navbar = () => {
   return (
@@ -16,7 +16,6 @@ const Navbar = () => {
           <span></span>
         </div>
         <div className="header__links">
-          <Link to="/">Home</Link>
           <Link to="/trading">Trading</Link>
           <Link to="/accounts">Accounts</Link>
           <Link to="/terms">Resources</Link>
@@ -26,7 +25,6 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="header__menu has-fade">
-        <Link to="/">Home</Link>
         <Link to="/trading">Trading</Link>
         <Link to="/accounts">Accounts</Link>
         <Link to="/terms">Resources</Link>
@@ -35,7 +33,7 @@ const Navbar = () => {
         <button className="header__oa-btn">Open Account</button>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
