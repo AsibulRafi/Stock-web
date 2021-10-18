@@ -35,7 +35,7 @@ const Home = () => {
       image: sliderImg2,
     },
   ]
-  const [info, setInfo] = useState(data)
+  const [info] = useState(data)
   const [index, setIndex] = useState(0)
   // Window Scroll to
   useEffect(() => {
