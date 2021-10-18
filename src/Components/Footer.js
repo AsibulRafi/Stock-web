@@ -14,8 +14,12 @@ const Footer = () => {
             <h4 className="nav__heading">Fast Links</h4>
             <div className="nav__links">
               <div className="link1">
-                <Link to="/about">About US</Link>
-                <Link to="/about">Contact US</Link>
+                <Link to="/about" onClick={() => window.scrollTo(0, 0)}>
+                  About US
+                </Link>
+                <Link to="/about" onClick={() => window.scrollTo(0, 900)}>
+                  Contact US
+                </Link>
                 <Link to="/accounts">Account Types</Link>
               </div>
               <div className="link2">

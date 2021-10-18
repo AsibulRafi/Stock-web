@@ -535,7 +535,7 @@ h4 {
   color: #ff6e52;
   font-size: 2.5rem;
   font-weight: 500;
-  margin-block: 2rem;
+  margin-block: 4rem;
 }
 
 @media (max-width: 39.9375rem) {
@@ -544,6 +544,7 @@ h4 {
     font-size: 2rem;
     border-bottom: 2px solid #ff6e52;
     padding: 0rem 8rem;
+    margin-block: 2rem;
   }
 }
 

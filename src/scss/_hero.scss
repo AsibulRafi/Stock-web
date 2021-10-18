@@ -124,12 +124,13 @@
         color: $secondary;
         font-size: 2.5rem;
         font-weight: 500;
-        margin-block: 2rem;
+        margin-block: 4rem;
         @include breakpoint-down(small) {
           padding-bottom: 2rem;
           font-size: 2rem;
           border-bottom: 2px solid $secondary;
           padding: 0rem 8rem;
+          margin-block: 2rem;
         }
       }
     }
