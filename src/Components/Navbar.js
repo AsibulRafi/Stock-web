@@ -16,19 +16,19 @@ const Navbar = () => {
           <span></span>
         </div>
         <div className="header__links">
-          <Link to="/trading">Trading</Link>
-          <Link to="/accounts">Accounts</Link>
-          <Link to="/terms">Resources</Link>
           <Link to="/about">About Us</Link>
+          <Link to="/accounts">Accounts</Link>
+          <Link to="/trading">Trading</Link>
+          <Link to="/terms">Resources</Link>
           <button className="header__lg-btn">Login</button>
           <button className="header__oa-btn">Open Account</button>
         </div>
       </nav>
       <div className="header__menu has-fade">
-        <Link to="/trading">Trading</Link>
-        <Link to="/accounts">Accounts</Link>
-        <Link to="/terms">Resources</Link>
         <Link to="/about">About Us</Link>
+        <Link to="/accounts">Accounts</Link>
+        <Link to="/trading">Trading</Link>
+        <Link to="/terms">Resources</Link>
         <button className="header__lg-btn">Login</button>
         <button className="header__oa-btn">Open Account</button>
       </div>
