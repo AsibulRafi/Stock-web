@@ -37,6 +37,11 @@ const Home = () => {
   ]
   const [info, setInfo] = useState(data)
   const [index, setIndex] = useState(0)
+  // Window Scroll to
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   useEffect(() => {
     const lastIndex = info.length - 1
     if (index < 0) {

@@ -1,7 +1,10 @@
-import { useState } from "react";
-import privacyImg from "../images/privacyImg.png";
+import { useState, useEffect } from "react"
+import privacyImg from "../images/privacyImg.png"
 const Terms = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <section className="terms__heading">
@@ -877,6 +880,6 @@ const Terms = () => {
         </div>
       </section>
     </>
-  );
-};
-export default Terms;
+  )
+}
+export default Terms

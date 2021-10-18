@@ -118,6 +118,7 @@
       }
       @include breakpoint-down(small) {
         flex-direction: column;
+        padding: 2rem 0rem;
       }
       h4 {
         color: $secondary;
